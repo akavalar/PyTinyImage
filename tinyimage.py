@@ -36,19 +36,19 @@ def getMetaData(indx):
   meta_file.seek(offset)
   data = meta_file.read(768)
   keyword = data[0:80].strip()
-  filename = data[80:185].split(" ")[0]
-  width = data[185:187]
-  height = data[187:189]
-  color = data[189:190]
-  date = data[190:222]
-  engine = data[222:232]
-  thumbnail = data[232:432]
-  source = data[432:760]
-  page = data[760:764]
-  indpage = data[764:768]
-  indengine = data[768:762]
-  indoverall = data[762:764]
-  label = data[764:768]
+  filename = data[80:175].strip()
+  width = data[175:177].strip()
+  height = data[177:179].strip()
+  color = data[179:180].strip()
+  date = data[180:212].strip()
+  engine = data[212:222].strip()
+  thumbnail = data[222:422].strip()
+  source = data[422:750].strip()
+  page = data[750:754].strip()
+  indpage = data[754:758].strip()
+  indengine = data[758:762].strip()
+  indoverall = data[762:764].strip()
+  label = data[764:768].strip()
   return (keyword, filename, width, height, color, date, engine, thumbnail, source, page, indpage, indengine,indoverall, label)
 
 img_count = 79302017
