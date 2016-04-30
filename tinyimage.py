@@ -47,8 +47,8 @@ def getMetaData(indx):
   page = data[750:754].strip()
   indpage = data[754:758].strip()
   indengine = data[758:762].strip()
-  indoverall = data[762:764].strip()
-  label = data[764:768].strip()
+  indoverall = data[762:766].strip()
+  label = data[766:768].strip()
   return (keyword, filename, width, height, color, date, engine, thumbnail, source, page, indpage, indengine,indoverall, label)
 
 img_count = 79302017
